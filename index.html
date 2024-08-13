@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    html,body{
+        width:50%;
+        height:100% ;
+
+    }
+.container{
+    display:grid;
+   grid-template-areas:"hi hello overlap overlap" 
+                       "hi fluid  suni negative"
+                       "member memory2 suni memory3"
+                       "dom memory2 named named";
+
+                         height:90%;
+                         width: 80%;
+                        }
+
+
+.container .memory1{
+grid-area:hi;
+background-color:red;
+color:white;
+text-align: center;
+align-content: center;
+border: 1px solid black;
+}
+
+.container .responsive{
+grid-area:hello;
+background-color:greenyellow;
+color:white;
+text-align: center;
+align-content: center;
+border: 1px solid black;
+}
+
+.container .overlap{
+grid-area:overlap;
+background-color:gray;
+color:white;
+text-align: center;
+align-content: center;
+border:1px solid black;
+}
+
+.container .fluid{
+grid-area:fluid;
+background-color:lightcoral;
+color:white;
+text-align: center;
+align-content: center;
+border:1px solid black;
+}
+
+.container .explicity{
+grid-area:suni;
+background-color:orange;
+color:white;
+text-align: center;
+align-content: center;
+border:1px solid black;
+}
+
+.container .negative{
+grid-area:negative;
+background-color:navy;
+color:white;
+text-align: center;
+align-content: center;
+border:1px solid black;
+}
+.container .memory3{
+grid-area:memory3;
+background-color:black;
+color:white;
+text-align: center;
+align-content: center;
+border: 1px solid black;
+}
+.container .dom{
+grid-area:dom;
+background-color:green;
+color:white;
+text-align: center;
+align-content: center;
+border: 1px solid black;
+}
+
+.container .memory2{
+grid-area:memory2;
+background-color: rgb(8, 248, 112);
+color:white;
+text-align: center;
+align-content: center;
+border: 1px solid black;
+}
+
+.container .named{
+grid-area:named;
+background-color:brown;
+color:white;
+text-align: center;
+align-content: center;
+border:1px solid black;
+}
+
+.container .flexible{
+grid-area:member;
+background-color:rgb(253, 105, 6);
+color:white;
+text-align: center;
+align-content: center;
+border:1px solid black;
+}
+.container{font-size: 3em;}
+</style>
+</head>
+<body>
+    <div class="container">
+    <section class="memory1">hi</section>
+    <section class="responsive">hello</section>
+    <section class="overlap">overlap</section>
+    <section class="fluid">fluid</section>
+    <section class="explicity">suni</section>
+    <section class="negative">negative </section>
+    <section class="flexible">member</section>
+    <section class="memory2">memory2</section>
+    <section class="memory3">memory3</section>
+    <section class="dom">dom</section>
+    <section class="named">named</section> 
+    
+
+    </div>
+</body>
+</html>
